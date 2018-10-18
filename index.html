@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[Thesis] Volumetric Cloud Rendering</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.3/dat.gui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babylonjs/3.3.0-rc.2/babylon.js"></script>
+
+    <style>
+        .container {
+            position: relative;
+        }
+
+        #fullscreenButton {
+            width: 48px;
+            height: 48px;
+            border: none;
+            background: teal;
+            color: white;
+            font-size: 24px;
+            position: absolute;
+            left: 8px;
+            top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="view" width="1280" height="720"></canvas>
+        <button id="fullscreenButton"><i class="fas fa-arrows-alt"></i></button>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
